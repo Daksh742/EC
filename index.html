@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥 EXCLUSIVE RESULTS - LEAKED 🔥</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@700&family=Press+Start+2P&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    color: #ff1a1a;
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container {
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .screen { display: none; animation: fadeIn 0.4s ease-in; }
+  .screen.active { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes glitch {
+    0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+    25% { text-shadow: -2px 0 red, 2px 0 cyan; }
+    50% { text-shadow: 2px 2px red, -2px -2px cyan; }
+    75% { text-shadow: -2px 2px red, 2px -2px cyan; }
+    100% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 20px #ff0000; }
+    50% { transform: scale(1.05); box-shadow: 0 0 40px #ff0000, 0 0 80px #ff000066; }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  @keyframes confettiFall {
+    0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
+
+  .title {
+    font-family: 'Creepster', cursive;
+    font-size: 2.5rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff000088;
+    margin-bottom: 20px;
+    animation: glitch 0.5s infinite;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #ff4444;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+
+  .ragebait-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    color: #cc0000;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    padding: 15px;
+    border: 1px solid #330000;
+    background: #1a0000;
+    border-radius: 8px;
+  }
+
+  .click-btn {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #cc0000, #ff0000, #cc0000);
+    border: 2px solid #ff0000;
+    padding: 18px 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .click-btn:hover {
+    background: linear-gradient(135deg, #ff0000, #ff3333, #ff0000);
+    box-shadow: 0 0 30px #ff0000, 0 0 60px #ff000044;
+  }
+
+  .click-btn:active { transform: scale(0.95); }
+
+  .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #1a0000;
+    border-radius: 3px;
+    margin-top: 25px;
+    overflow: hidden;
+    border: 1px solid #330000;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff0000, #ff4444);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 10px #ff0000;
+  }
+
+  .progress-label {
+    font-size: 0.6rem;
+    color: #ff4444;
+    margin-top: 8px;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .loading-fake {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .loading-fake.active {
+    display: flex;
+  }
+
+  .spinner {
+    width: 50px; height: 50px;
+    border: 4px solid #330000;
+    border-top: 4px solid #ff0000;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .loading-text {
+    font-size: 0.65rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #ff4444;
+  }
+
+  /* FINAL SCREEN */
+  .final-screen {
+    display: none;
+    animation: fadeIn 0.6s ease-in;
+  }
+  .final-screen.active { display: block; }
+
+  .final-title {
+    font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #ff0000, #ff4444, #ff0000, #cc0000, #ff0000);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 2s linear infinite;
+  }
+
+  .final-emoji {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: shake 0.5s infinite;
+  }
+
+  .final-message {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #ff0000;
+    line-height: 2.2;
+    padding: 30px;
+    border: 2px solid #ff0000;
+    background: #1a0000;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #ff000033;
+    text-shadow: 0 0 10px #ff000088;
+  }
+
+  .final-message .venue {
+    font-size: 1.3rem;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ff000066;
+    text-shadow: 0 0 15px #ff0000;
+  }
+
+  .confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    animation: confettiFall 3s linear forwards;
+  }
+
+  .troll-face {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- SCREEN 1 -->
+  <div class="screen active" id="screen1">
+    <div class="title">⚠️ LEAKED RESULTS ⚠️</div>
+    <div class="subtitle">// CLASSIFIED - DO NOT SHARE //</div>
+    <div class="ragebait-text">
+      ⚡ THIS PAGE WILL SELF-DESTRUCT ⚡<br><br>
+      You have been selected to view<br>
+      the EXCLUSIVE results before<br>
+      anyone else. Act NOW.
+    </div>
+    <button class="click-btn" onclick="nextScreen(1)">👆 CLICK HERE FOR RESULTS 👆</button>
+    <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+    <div class="progress-label">DECRYPTING: 0%</div>
+  </div>
+
+  <!-- SCREEN 2 -->
+  <div class="screen" id="screen2">
+    <div class="title">🔓 ACCESS GRANTED</div>
+    <div class="subtitle">// SECURITY CHECK 1 OF 5 //</div>
+    <div class="ragebait-text">
+      ✅ Identity Verified.<br><br>
+      Your IP has been logged.<br>
+      You MUST complete all steps<br>
+      or access will be REVOKED<br>
+      permanently. No second chances.
+    </div>
+    <button class="click-btn" onclick="nextScreen(2)">👆 CONTINUE TO RESULTS 👆</button>
+    <div class="progress-bar"><div class="progress-fill" style="width: 20%"></div></div>
+    <div class="progress-label">DECRYPTING: 20%</div>
+  </div>
+
+  <!-- SCREEN 3 -->
+  <div class="screen" id="screen3">
+    <div class="title">⏳ ALMOST THERE...</div>
+    <div class="subtitle">// SECURITY CHECK 3 OF 5 //</div>
+    <div class="ragebait-text">
+      🔥 CRITICAL ALERT 🔥<br><br>
+      Someone else is trying to<br>
+      access YOUR results right now!!<br>
+      CLICK FAST or you'll lose<br>
+      your spot FOREVER.
+    </div>
+    <button class="click-btn" onclick="nextScreen(3)">⚡ HURRY! CLICK NOW!! ⚡</button>
+    <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+    <div class="progress-label">DECRYPTING: 50%</div>
+  </div>
+
+  <!-- SCREEN 4 -->
+  <div class="screen" id="screen4">
+    <div class="title">🚨 FINAL WARNING 🚨</div>
+    <div class="subtitle">// SECURITY CHECK 4 OF 5 //</div>
+    <div class="ragebait-text">
+      ❌ CONNECTION UNSTABLE ❌<br><br>
+      Server overload detected!!<br>
+      3,847 people waiting in queue.<br>
+      YOU are next in line.<br>
+      ONE MORE CLICK and it's yours.
+    </div>
+    <button class="click-btn" onclick="nextScreen(4)">🔓 UNLOCK RESULTS NOW 🔓</button>
+    <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+    <div class="progress-label">DECRYPTING: 75%</div>
+  </div>
+
+  <!-- SCREEN 5 -->
+  <div class="screen" id="screen5">
+    <div class="title">💀 LAST CHANCE 💀</div>
+    <div class="subtitle">// FINAL SECURITY CHECK //</div>
+    <div class="ragebait-text">
+      🔴 THIS IS NOT A DRILL 🔴<br><br>
+      The results are LOADED.<br>
+      This is your ABSOLUTE last<br>
+      click. After this, the truth<br>
+      will be revealed...
+    </div>
+    <button class="click-btn" onclick="showFinal()">💀 REVEAL THE TRUTH 💀</button>
+    <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+    <div class="progress-label">DECRYPTING: 95%</div>
+  </div>
+
+  <!-- LOADING SCREEN -->
+  <div class="loading-fake" id="loadingScreen">
+    <div class="title">DECRYPTING...</div>
+    <div class="spinner"></div>
+    <div class="loading-text" id="loadingStatus">ACCESSING MAINFRAME...</div>
+  </div>
+
+  <!-- FINAL REVEAL -->
+  <div class="final-screen" id="finalScreen">
+    <div class="final-emoji">😈</div>
+    <div class="final-title">GET TROLLED</div>
+    <div class="final-message">
+      There are no results.<br>
+      There never were. 💀<br><br>
+      But here's the real deal:<br><br>
+      <span class="venue">
+        📍 SEE YOU IN THE EVENING<br>
+        🕕 AT 6 PM<br>
+        🏠 VENUE F-315
+      </span>
+    </div>
+    <div class="troll-face">🤡</div>
+  </div>
+</div>
+
+<script>
+  function nextScreen(current) {
+    document.getElementById('screen' + current).classList.remove('active');
+    document.getElementById('screen' + (current + 1)).classList.add('active');
+    
+    // Screen shake effect
+    document.body.style.animation = 'shake 0.3s';
+    setTimeout(() => document.body.style.animation = '', 300);
+  }
+
+  function showFinal() {
+    document.getElementById('screen5').classList.remove('active');
+    const loading = document.getElementById('loadingScreen');
+    loading.classList.add('active');
+
+    const messages = [
+      'ACCESSING MAINFRAME...',
+      'BYPASSING FIREWALL...',
+      'DECODING ENCRYPTION...',
+      'DOWNLOADING DATA...',
+      'RENDERING RESULTS...',
+      'ALMOST DONE...',
+      'LOL JK 😂'
+    ];
+
+    let i = 0;
+    const interval = setInterval(() => {
+      if (i < messages.length) {
+        document.getElementById('loadingStatus').textContent = messages[i];
+        i++;
+      } else {
+        clearInterval(interval);
+        loading.classList.remove('active');
+        document.getElementById('finalScreen').classList.add('active');
+        spawnConfetti();
+      }
+    }, 600);
+  }
+
+  function spawnConfetti() {
+    const colors = ['#ff0000', '#ff4444', '#cc0000', '#ffffff', '#ff6666'];
+    for (let i = 0; i < 60; i++) {
+      setTimeout(() => {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+        piece.style.animationDuration = (2 + Math.random() * 2) + 's';
+        piece.style.animationDelay = Math.random() * 0.5 + 's';
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 4000);
+      }, i * 50);
+    }
+  }
+
+  // Disable right-click for extra troll
+  document.addEventListener('contextmenu', e => e.preventDefault());
+</script>
+
+</body>
+</html>
